@@ -18,7 +18,7 @@
   <name>wztube-demo</name>
 
   <modules>
-    <module>wztube_mvc</module>
+    <module>wztube-mvc</module>
   </modules>
 
   <properties>
