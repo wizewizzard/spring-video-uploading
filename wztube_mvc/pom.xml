@@ -8,9 +8,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>wztube</artifactId>
+    <artifactId>wztube-mvc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>wztube</name>
+    <name>wztube-mvc</name>
     <description>Video hosting demo using spring mvc</description>
 
     <dependencies>
