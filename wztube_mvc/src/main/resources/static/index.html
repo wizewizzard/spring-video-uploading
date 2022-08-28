@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WZ Tube</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the WZ Tube!</h2>
+        <div class="content grid">
+            <div class="videoListContainer">
+                <h3>Available videos</h3>
+                <ul id="videoList">
+                    <li>m1</li>
+                    <li>m2</li>
+                </ul>
+            </div>
+            <div class="videoPlayerContainer">
+                <h3 id="playerMessage">Select a movie</h3>
+                <video src="" id="videoPlayer" width="720" height="480" controls></video>
+            </div>
+            <div class="videoUploadContainer">
+                <h3>Upload new video</h3>
+                <form id="videoUploadForm">
+                    <fieldset>
+                        <div>
+                            <label for="name">Video Name</label>
+                            <input type="text" placeholder="Holidays in park" value="" name="name" />
+                        </div>
+                        <div>
+                            <label for="file">File</label>
+                            <input type="file" name="file" accept="video/mp4" />
+                        </div>
+                    </fieldset>
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

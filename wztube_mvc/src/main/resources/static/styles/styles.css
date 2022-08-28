@@ -1,0 +1,58 @@
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1320px;
+    min-height: 600px;
+    font-size: 16px;
+    box-shadow: 0px 10px 5px gray;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.videoListContainer{
+    grid-area: 1 / 6 / 3 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.videoPlayerContainer{
+    grid-area: 1 / 1 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoUploadContainer{
+    grid-area: 3 / 6 / 5 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
