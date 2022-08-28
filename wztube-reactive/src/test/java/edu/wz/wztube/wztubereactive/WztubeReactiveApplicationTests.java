@@ -1,13 +1,13 @@
-package edu.wz.wztube;
+package edu.wz.wztube.wztubereactive;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WzTubeApplicationTests {
-    
-    @Test
-    void contextLoads() {
-    }
-    
+class WztubeReactiveApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
 }
