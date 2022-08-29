@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: WZTube
+
+server:
+  port: 8080
+  tomcat:
+    max-http-form-post-size: 100000000
+    max-swallow-size: 100000000
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  servlet:
+    multipart:
+      maxFileSize: 1024MB
+      maxRequestSize: 1024MB
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/videodb
+    username: videodb
+    password: videodb
+  http:
+    multipart:
+      max-request-size: 1024MB
+      max-file-size: 1024MB
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    username: videodb
+    password: videodb
+    url: r2dbc:h2:mem:mydb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
